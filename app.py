@@ -20,6 +20,9 @@ def login():
     else:
         return jsonify({'status': 'fail', 'message': 'Invalid credentials'}), 401
 
-# Run the app
-if __name__ == '_main_':
-    app.run(debug=True)
+# Run the appi
+mport os
+
+if _name_ == '_main_':
+    port = int(os.environ.get("PORT", 5000))  # Use PORT from env or default to 5000 locally
+    app.run(host='0.0.0.0', port=port)
