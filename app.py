@@ -21,7 +21,7 @@ def login():
         return jsonify({'status': 'fail', 'message': 'Invalid credentials'}), 401
 
 # Run the appi
-mport os
+import os
 
 if _name_ == '_main_':
     port = int(os.environ.get("PORT", 5000))  # Use PORT from env or default to 5000 locally
