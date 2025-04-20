@@ -23,6 +23,6 @@ def login():
 # Run the appi
 import os
 
-if__name__ == '__main__':
+if__name__ == '_main_':
     port = int(os.environ.get("PORT", 5000))  # Use PORT from env or default to 5000 locally
     app.run(host='0.0.0.0', port=port)
